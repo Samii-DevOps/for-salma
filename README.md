@@ -1,3 +1,109 @@
-# Hi Salma
-Hope you are doing good amraya
-kda tmam wla mhtagen creativity aktr :D
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For Salma</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff0f5;
+      font-family: 'Segoe UI', cursive, sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff1493;
+      text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #ff69b4,
+        0 0 20px #ff1493,
+        0 0 30px #ff1493;
+      animation: glitter 1.5s infinite alternate;
+      margin-top: 80px;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #d6336c;
+      margin-top: 20px;
+    }
+
+    @keyframes glitter {
+      from {
+        text-shadow: 
+          0 0 5px #fff,
+          0 0 10px #ff69b4,
+          0 0 20px #ff1493;
+      }
+      to {
+        text-shadow: 
+          0 0 10px #fff,
+          0 0 20px #ff69b4,
+          0 0 30px #ff1493,
+          0 0 40px #ff69b4;
+      }
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 5s infinite ease-in-out;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-800px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Salma 💖</h1>
+  <p>You light up my life like glitter on stardust ✨</p>
+  <p>Wishing you a good day and a happy smile 😊</p>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 4 + Math.random() * 3 + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+
+</body>
+</html>
