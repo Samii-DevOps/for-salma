@@ -89,7 +89,7 @@
 <body>
 
   <h1>💖 Salma 💖</h1>
-  <p>You light up my life like glitter on stardust ✨</p>
+  <p>You light up life like glitter on stardust ✨</p>
   <p>Wishing you a good day and a happy smile 😊</p>
 
   <script>
